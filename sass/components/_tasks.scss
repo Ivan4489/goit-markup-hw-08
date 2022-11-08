@@ -1,0 +1,40 @@
+/* Чим ми займаємося */
+
+.tasks__head {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $headline-clr;
+}
+
+.tasks__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tasks__item {
+  position: relative;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white-clr;
+}
+
+.tasks__overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  background-color: $tasks-overlay-color;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}

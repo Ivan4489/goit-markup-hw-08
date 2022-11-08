@@ -1,0 +1,220 @@
+/* Модальне вікно */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: $backdrop-clr;
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: $animation;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(1.5);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+
+  min-width: 528px;
+  min-height: 581px;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  background: $white-clr;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  transition: transform 250ms $animation;
+}
+
+.form__head {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $headline-clr;
+}
+
+.customer-data {
+  margin-bottom: 20px;
+}
+
+.customer-data__item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
+  color: $primary-text-clr;
+}
+
+.customer-data__label {
+  margin-bottom: 4px;
+}
+
+.customer-data__input-div {
+  position: relative;
+}
+
+.customer-data__input {
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: $animation;
+}
+
+.customer-data__comment {
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+  resize: none;
+
+  &::placeholder {
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    line-height: 1.167;
+    letter-spacing: 0.01em;
+    color: $placeholder-clr;
+  }
+}
+
+.customer-data__input {
+  border: 1px solid $input-border-clr;
+  border-radius: 4px;
+  color: $black-clr;
+  cursor: pointer;
+
+  transition-property: border-color;
+  transition-duration: 500ms;
+  transition-timing-function: $animation;
+
+  &:hover,
+  &:focus {
+    border-color: $accent-clr;
+  }
+
+  &:hover + .customer-data__icon,
+  &:focus + .customer-data__icon {
+    fill: $accent-clr;
+  }
+}
+
+.customer-data__comment {
+  border: 1px solid $input-border-clr;
+  border-radius: 4px;
+  color: $black-clr;
+  cursor: pointer;
+
+  transition-property: border-color;
+  transition-duration: 500ms;
+  transition-timing-function: $animation;
+
+  &:hover,
+  &:focus {
+    border-color: $accent-clr;
+  }
+}
+
+.customer-data__icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+
+  fill: $headline-clr;
+
+  transition-property: fill;
+  transition-duration: 500ms;
+  transition-timing-function: $animation;
+}
+
+.policy-options {
+  margin-bottom: 30px;
+}
+
+.policy-options,
+.customer-data {
+  list-style: none;
+}
+
+.policy-options__checkbox {
+  appearance: none;
+}
+
+.policy-options__icon {
+  position: relative;
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+  margin-left: 13px;
+
+  border: 2px solid $headline-clr;
+  border-radius: 2px;
+  fill: transparent;
+}
+
+.icon-checked {
+  position: absolute;
+  left: -2px;
+  top: -2px;
+}
+
+.policy-options__checkbox {
+  &:checked + .policy-options__icon {
+    background-color: $accent-clr;
+    background-position: center;
+    border-color: transparent;
+    background-repeat: no-repeat;
+
+    fill: $white-clr;
+  }
+}
+
+.policy-options__label {
+  display: flex;
+  align-items: center;
+}
+
+.policy-options__label,
+.policy-options__link {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.policy-options__label {
+  color: $primary-text-clr;
+}
+
+.policy-options__link {
+  color: $accent-clr;
+  margin-left: 6px;
+}

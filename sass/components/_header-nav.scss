@@ -1,0 +1,55 @@
+/* Навігація сайту в шапці */
+.nav {
+  display: flex;
+  &__list {
+    display: flex;
+    margin-left: 93px;
+
+    list-style-type: none;
+  }
+
+  &__item + &__item {
+    margin-left: 50px;
+  }
+}
+
+.nav__link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $headline-clr;
+  text-decoration: none;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: $animation;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &--current {
+    color: $accent-clr;
+  }
+}
+
+.link--current {
+  position: relative;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+
+    background-color: $accent-clr;
+    border-radius: 2px;
+  }
+}

@@ -1,0 +1,60 @@
+.page {
+  background-color: $white-clr;
+  color: $primary-text-clr;
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+ul,
+p {
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* SECTION */
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* CONTAINER */
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.header__container,
+.footer__container {
+  display: flex;
+}
+
+.footer__container {
+  align-items: baseline;
+}
+
+.contacts__container {
+  display: flex;
+  align-items: center;
+}
+
+.portfolio__container {
+  display: flex;
+  flex-direction: column;
+}
