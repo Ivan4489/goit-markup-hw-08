@@ -30,6 +30,15 @@ img {
   padding-bottom: 94px;
 }
 
+@media screen and (max-width: 480px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    outline: 1px double moccasin;
+  }
+  
+}
+
 /* CONTAINER */
 
 .container {
@@ -38,6 +47,13 @@ img {
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+    outline: 1px double crimson;
+  }
 }
 
 .header__container,
@@ -54,7 +70,7 @@ img {
   align-items: center;
 }
 
-.portfolio__container {
-  display: flex;
-  flex-direction: column;
-}
+// .portfolio__container {
+//   display: flex;
+//   flex-direction: column;
+// }
