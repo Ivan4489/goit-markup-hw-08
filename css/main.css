@@ -74,6 +74,12 @@ img {
           align-items: center;
 }
 
+@media screen and (max-width: 480px) {
+  .footer__container {
+    display: inline-block;
+    text-align: center;
+  }
+}
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -144,6 +150,13 @@ img {
   margin-left: 10px;
 }
 
+@media screen and (max-width: 480px) {
+  .subscription__btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .form__btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -654,6 +667,11 @@ img {
   margin-right: 70px;
 }
 
+@media screen and (max-width: 480px) {
+  .footer__address {
+    margin-right: 0;
+  }
+}
 .footer__location {
   margin-bottom: 9px;
   font-style: normal;
@@ -766,6 +784,12 @@ img {
   border-color: #2196f3;
 }
 
+@media screen and (max-width: 480px) {
+  .subscription__form {
+    display: inline-block;
+    text-align: center;
+  }
+}
 /* Модальне вікно */
 .backdrop {
   position: fixed;

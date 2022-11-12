@@ -46,3 +46,10 @@
     border-color: $accent-clr;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .subscription__form {
+    display: inline-block;
+    text-align: center;
+  }
+}

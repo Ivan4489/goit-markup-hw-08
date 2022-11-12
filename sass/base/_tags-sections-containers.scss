@@ -70,6 +70,13 @@ img {
   align-items: center;
 }
 
+@media screen and (max-width: 480px) {
+  .footer__container {
+    display: inline-block;
+    text-align: center;
+  }
+}
+
 // .portfolio__container {
 //   display: flex;
 //   flex-direction: column;

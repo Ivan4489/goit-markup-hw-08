@@ -11,6 +11,12 @@
   margin-right: 70px;
 }
 
+@media screen and (max-width: 480px) {
+  .footer__address {
+    margin-right: 0;
+  }
+}
+
 .footer__location {
   margin-bottom: 9px;
 
