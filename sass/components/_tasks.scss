@@ -38,3 +38,9 @@
   padding-top: 27px;
   padding-bottom: 27px;
 }
+
+@media screen and (max-width: 480px) {
+  .tasks.section {
+    display: none;
+  }
+}

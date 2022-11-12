@@ -4,6 +4,12 @@
   padding-bottom: 0px;
 }
 
+@media screen and (max-width: 480px) {
+  .benefits {
+    padding-bottom: 60px;
+  }
+}
+
 .benefits__head {
   color: transparent;
   height: 0;

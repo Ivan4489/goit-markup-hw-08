@@ -31,6 +31,11 @@
   text-align: center;
 }
 
+.employee-card__thumb {
+  display: flex;
+  justify-content: center;
+}
+
 .employee-card__content {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -52,4 +57,19 @@
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+}
+
+
+@media screen and (max-width: 480px) {
+  .employee__list {
+    display: block;
+  }
+
+  .employee__item {
+    width: 100%;
+  }
+
+  .employee__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
