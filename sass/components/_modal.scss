@@ -12,6 +12,8 @@
   transition-property: opacity;
   transition-duration: 250ms;
   transition-timing-function: $animation;
+
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {

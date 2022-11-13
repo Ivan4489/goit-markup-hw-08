@@ -5,6 +5,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+.page.modal-open {
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -805,6 +809,7 @@ img {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
