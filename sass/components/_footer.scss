@@ -11,7 +11,7 @@
   margin-right: 70px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .footer__address {
     margin-right: 0;
   }

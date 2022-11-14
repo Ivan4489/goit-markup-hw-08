@@ -18,9 +18,24 @@
 }
 
 .header__logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
+
+@media screen and (min-width: 768px) {
+  .header__logo {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .header__logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}
+
 
 .footer__logo {
   display: inline-block;

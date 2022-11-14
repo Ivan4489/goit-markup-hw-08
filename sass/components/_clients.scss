@@ -44,7 +44,7 @@
   fill: currentColor;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .clients__list {
     flex-wrap: wrap;
     margin-left: calc(-1 * $card-set-gap);
