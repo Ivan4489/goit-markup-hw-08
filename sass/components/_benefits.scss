@@ -6,13 +6,37 @@
 }
 
 .benefits__list {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    margin: -15px;
+  }
+
+  // gap: $card-set-gap;
 }
 
 .benefits__item {
   width: 100%;
-  &:not(:last-child) {
-    margin-bottom: 30px;
+  max-width: calc(480px - $card-set-gap);
+  outline: 1px solid greenyellow;
+
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 2 * 30px) / 2);
+    max-width: 354px;
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    width: calc((100% - 4 * 30px) / 4);
+    max-width: 270px;
   }
 }
 
