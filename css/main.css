@@ -404,34 +404,27 @@ img {
 }
 
 /* Переваги */
-.benefits {
-  padding-bottom: 0px;
-}
-
-@media screen and (min-width: 480px) {
-  .benefits {
-    padding-bottom: 60px;
-  }
-}
 .benefits__head {
   color: transparent;
   height: 0;
 }
 
 .benefits__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: block;
+}
+
+.benefits__item {
+  width: 100%;
+}
+.benefits__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .benefits__icon-div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 270px;
+  width: 100%;
   height: 120px;
   margin-bottom: 30px;
   -webkit-box-pack: center;
@@ -445,9 +438,13 @@ img {
 }
 
 .benefits__title {
-  width: 270px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 10px;
-  margin-top: 0;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -457,35 +454,11 @@ img {
 }
 
 .benefits__description {
-  width: 270px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
-@media screen and (min-width: 480px) {
-  .benefits__list {
-    display: block;
-  }
-  .benefits__icon-div {
-    width: 100%;
-  }
-  .benefits__title {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 100%;
-  }
-  .benefits__description {
-    width: 100%;
-  }
-  .benefits__item:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
 /* Чим ми займаємося */
 .tasks__head {
   margin-bottom: 50px;
