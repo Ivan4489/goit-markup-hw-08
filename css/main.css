@@ -160,9 +160,16 @@ img {
 }
 
 .hero__btn {
-  padding-left: 32px;
-  padding-right: 32px;
-  min-width: 216px;
+  padding-left: 24px;
+  padding-right: 24px;
+  min-width: 200px;
+}
+@media screen and (min-width: 1600px) {
+  .hero__btn {
+    padding-left: 32px;
+    padding-right: 32px;
+    min-width: 216px;
+  }
 }
 
 .subscription__btn {
