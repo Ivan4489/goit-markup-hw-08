@@ -1,11 +1,11 @@
 // Герой на головній сторінці
 
 .hero {
-  height: 600px;
-  max-width: 1600px;
+  height: 400px;
+  width: 480px;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
 
@@ -21,10 +21,31 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  &__title {
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    height: 600px;
+    width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
+.hero__title {
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 360px;
+
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 1.62;
+
+  @media screen and (min-width: 1600px) {
     width: 696px;
 
     font-weight: 900;
@@ -32,7 +53,8 @@
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: $white-clr;
   }
+
+  text-transform: uppercase;
+  color: $white-clr;
 }
