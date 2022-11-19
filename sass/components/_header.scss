@@ -1,8 +1,39 @@
 /* Шапка сайту */
 
 .header {
+  position: relative;
+
   background-color: $white-clr;
   border-bottom: 1px solid $header-border-clr;
+
+  // display: flex;
+  // align-items: center;
+}
+
+.menu-button {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.menu-button__icon-close {
+  display: none;
+}
+
+.menu-button.is-open .menu-button__icon-close {
+  display: block;
+}
+
+.menu-button.is-open .menu-button__icon-menu {
+  display: none;
 }
 
 .menu-container {
