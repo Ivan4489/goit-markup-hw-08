@@ -15,12 +15,23 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../images/hero-img.jpg");
+    url("../images/hero-img-mob.jpg");
 
   background-color: $bg-hero-clr;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero-img-mob-2x.jpg");
+  }
 
   @media screen and (min-width: 480px) {
     width: 100%;
@@ -28,6 +39,23 @@
 
   @media screen and (min-width: 768px) {
     max-width: 768px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero-img-tab.jpg");
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/hero-img-tab-2x.jpg");
+    }
   }
 
   @media screen and (min-width: 1600px) {
@@ -35,6 +63,23 @@
     width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero-img.jpg");
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/hero-img-2x.jpg");
+    }
   }
 }
 
@@ -42,7 +87,7 @@
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-  width: 360px;
+  max-width: 360px;
 
   font-weight: 900;
   font-size: 26px;
@@ -51,7 +96,7 @@
   letter-spacing: 1.62;
 
   @media screen and (min-width: 1600px) {
-    width: 696px;
+    max-width: 696px;
 
     font-weight: 900;
     font-size: 44px;
