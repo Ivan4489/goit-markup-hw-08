@@ -16,7 +16,7 @@
   position: relative;
 }
 
-.menu-button {
+.menu-open {
   min-height: 40px;
   min-width: 40px;
   display: flex;
@@ -34,17 +34,17 @@
   }
 }
 
-.menu-button__icon-close {
-  display: none;
-}
+// .menu-button__icon-close {
+//   display: none;
+// }
 
-.menu-button.is-open .menu-button__icon-close {
-  display: block;
-}
+// .menu-button.is-open .menu-button__icon-close {
+//   display: block;
+// }
 
-.menu-button.is-open .menu-button__icon-menu {
-  display: none;
-}
+// .menu-button.is-open .menu-button__icon-menu {
+//   display: none;
+// }
 
 .menu-container {
   height: 400px;

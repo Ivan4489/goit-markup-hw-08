@@ -24,16 +24,12 @@
         </a>
         <button
           type="button"
-          class="menu-button"
+          class="menu-open"
           aria-expanded="false"
           aria-controls="menu-container"
-          data-menu-button
+          data-menu-open
         >
-          <svg width="40" height="40" aria-label="Перемикач мобільного меню">
-            <use
-              class="menu-button__icon-close"
-              href="./images/icons.svg#icon-close"
-            ></use>
+          <svg width="40" height="40" aria-label="Відкрити мобільне меню">
             <use
               class="menu-button__icon-menu"
               href="./images/icons.svg#icon-menu"
@@ -82,6 +78,85 @@
               </a>
             </li>
           </ul>
+        </div>
+      </div>
+
+      <!-- Мобільне меню -->
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="container">
+          <div class="mob-menu-top">
+            <button
+              type="button"
+              class="menu-close"
+              aria-expanded="false"
+              aria-controls="menu-container"
+              data-menu-close
+            >
+              <svg width="40" height="40" aria-label="Закрити мобільне меню">
+                <use
+                  class="menu-close__icon"
+                  href="./images/icons.svg#icon-close"
+                ></use>
+              </svg>
+            </button>
+
+            <ul class="mob-nav__list">
+              <li class="mob-nav__item">
+                <a
+                  href="./index.html"
+                  class="mob-nav__link mob-nav__link--current"
+                  >Студія</a
+                >
+              </li>
+              <li class="mob-nav__item">
+                <a href="./portfolio.html" class="mob-nav__link">Портфоліо</a>
+              </li>
+              <li class="mob-nav__item">
+                <a href="" class="mob-nav__link">Контакти</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mob-menu-bottom">
+            <ul class="mob-contacts">
+              <li class="mob-contacts__item item--tel">
+                <a
+                  href="tel:+380961111111"
+                  class="mob-contacts__link link--tel"
+                >
+                  <div class="mob-contacts__container">
+                    <span class="mob-contacts__info">+38 096 111 11 11</span>
+                  </div>
+                </a>
+              </li>
+
+              <li class="mob-contacts__item item--mail">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mob-contacts__link link--mail"
+                >
+                  <div class="mob-contacts__container">
+                    <span class="mob-contacts__info">info@devstudio.com</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+
+            <ul class="mob-soc">
+              <li class="mob-soc__item">
+                <a href="" class="mob-soc__link">Instgram</a>
+              </li>
+              <li class="mob-soc__item">
+                <a href="" class="mob-soc__link">Twitter</a>
+              </li>
+              <li class="mob-soc__item">
+                <a href="" class="mob-soc__link">Facebook</a>
+              </li>
+              <li class="mob-soc__item">
+                <a href="" class="mob-soc__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -229,13 +304,13 @@
                       "
                       media="(min-width: 320px)"
                     />
+                    <img
+                      src="./images/card-1.jpg"
+                      alt="Ігор Дем'яненко, Product Designer"
+                      width="450"
+                      height="460"
+                    />
                   </picture>
-                  <img
-                    src="./images/card-1.jpg"
-                    alt="Ігор Дем'яненко, Product Designer"
-                    width="450"
-                    height="460"
-                  />
                 </div>
 
                 <div class="employee-card__content">
@@ -313,6 +388,12 @@
                         ./images/card-2-mob-2x.jpg 2x
                       "
                       media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/card-2.jpg"
+                      alt="Ольга Рєпіна, Frontend Developer"
+                      width="450"
+                      height="460"
                     />
                   </picture>
                   <img
@@ -399,13 +480,13 @@
                       "
                       media="(min-width: 320px)"
                     />
+                    <img
+                      src="./images/card-3.jpg"
+                      alt="Микола Тарасов, Marketing"
+                      width="450"
+                      height="460"
+                    />
                   </picture>
-                  <img
-                    src="./images/card-3.jpg"
-                    alt="Микола Тарасов, Marketing"
-                    width="450"
-                    height="460"
-                  />
                 </div>
 
                 <div class="employee-card__content">
@@ -485,13 +566,13 @@
                       "
                       media="(min-width: 320px)"
                     />
+                    <img
+                      src="./images/card-4.jpg"
+                      alt="Михайло Єрмаков, UI Designer"
+                      width="450"
+                      height="460"
+                    />
                   </picture>
-                  <img
-                    src="./images/card-4.jpg"
-                    alt="Михайло Єрмаков, UI Designer"
-                    width="450"
-                    height="460"
-                  />
                 </div>
 
                 <div class="employee-card__content">
@@ -778,7 +859,7 @@
               <textarea
                 class="customer-data__comment"
                 name="feedback"
-                rows=""
+                rows="1"
                 placeholder="Введіть текст"
                 id="feedback"
               ></textarea>
@@ -809,6 +890,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
-    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

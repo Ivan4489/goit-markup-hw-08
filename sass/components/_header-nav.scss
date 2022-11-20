@@ -1,43 +1,23 @@
 /* Навігація сайту в шапці */
 .nav {
-  @media screen and (min-width: 1600px) {
-    display: flex;
-    &__list {
-      display: flex;
-      margin-left: 93px;
+  display: none;
 
-      list-style-type: none;
-    }
+  // @media screen and (min-width: 1600px) {
+  //   display: flex;
+  //   &__list {
+  //     display: flex;
+  //     margin-left: 93px;
 
-    &__item + &__item {
-      margin-left: 50px;
-    }
-  }
+  //     list-style-type: none;
+  //   }
+
+  //   &__item + &__item {
+  //     margin-left: 50px;
+  //   }
+  // }
 }
 
 .nav__link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-right: 0;
-
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 1.175;
-  letter-spacing: 0.02em;
-  color: $headline-clr;
-  text-decoration: none;
-
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: $animation;
-
-  &:hover,
-  &:focus,
-  &:active,
-  &--current {
-    color: $accent-clr;
-  }
 
 
   @media screen and (min-width: 1600px) {
