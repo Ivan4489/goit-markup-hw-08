@@ -72,17 +72,10 @@ img {
   }
 }
 
-.header__container,
-.footer__container {
+.header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.footer__container {
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
 }
 
 .contacts__container {
@@ -94,12 +87,6 @@ img {
           align-items: center;
 }
 
-@media screen and (min-width: 480px) {
-  .footer__container {
-    display: inline-block;
-    text-align: center;
-  }
-}
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -986,15 +973,38 @@ img {
   background-color: #2f303a;
 }
 
-.footer__address {
-  margin-right: 70px;
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  outline: 1px solid yellowgreen;
 }
-
-@media screen and (min-width: 480px) {
-  .footer__address {
-    margin-right: 0;
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
+
+@media screen and (min-width: 1600px) {
+  .footer__address {
+    margin-right: 70px;
+  }
+}
+
 .footer__location {
   margin-bottom: 9px;
   font-style: normal;
@@ -1050,16 +1060,6 @@ img {
   margin-left: auto;
 }
 
-.subscription__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
 .subscription__head {
   margin-bottom: 20px;
   font-style: normal;
@@ -1071,11 +1071,22 @@ img {
   color: #ffffff;
 }
 
+.subscription__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 .subscription__input-mail {
   width: 358px;
   height: 50px;
   padding-left: 16px;
   padding-right: 16px;
+  margin-right: 12px;
   background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -1107,12 +1118,6 @@ img {
   border-color: #2196f3;
 }
 
-@media screen and (min-width: 480px) {
-  .subscription__form {
-    display: inline-block;
-    text-align: center;
-  }
-}
 /* Модальне вікно */
 .backdrop {
   position: fixed;

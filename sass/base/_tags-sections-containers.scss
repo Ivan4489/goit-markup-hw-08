@@ -71,25 +71,13 @@ img {
   }
 }
 
-.header__container,
-.footer__container {
+.header__container {
   display: flex;
-}
-
-.footer__container {
-  align-items: baseline;
 }
 
 .contacts__container {
   display: flex;
   align-items: center;
-}
-
-@media screen and (min-width: 480px) {
-  .footer__container {
-    display: inline-block;
-    text-align: center;
-  }
 }
 
 // .portfolio__container {

@@ -7,13 +7,25 @@
   background-color: $bg-footer-clr;
 }
 
-.footer__address {
-  margin-right: 70px;
+.footer__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  outline: 1px solid yellowgreen;
+
+  @media screen and (min-width: 768px) and (max-width: 1599px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
-@media screen and (min-width: 480px) {
-  .footer__address {
-    margin-right: 0;
+.footer__address {
+
+
+
+  @media screen and (min-width: 1600px) {
+    margin-right: 70px;
   }
 }
 
