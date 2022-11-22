@@ -4,12 +4,10 @@
   background-color: $white-clr;
   border-bottom: 1px solid $header-border-clr;
 
-
-@media screen and (min-width: 1600px){
-  display: flex;
-  align-items: center;
-}
-
+  @media screen and (min-width: 1600px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .container.header__container {
