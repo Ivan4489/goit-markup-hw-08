@@ -440,6 +440,14 @@ img {
   .contacts__icon {
     margin-right: 10px;
   }
+  .contacts__icon.icon--envelope {
+    width: 16px;
+    height: 12px;
+  }
+  .contacts__icon.icon-smartphne {
+    width: 10px;
+    height: 16px;
+  }
 }
 
 .mob-menu {
@@ -1067,9 +1075,6 @@ img {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
 }
 
@@ -1187,6 +1192,12 @@ img {
             align-items: center;
   }
 }
+@media screen and (min-width: 1200px) {
+  .channels {
+    margin-right: 93px;
+    margin-left: 93px;
+  }
+}
 
 .channels__head {
   margin-bottom: 20px;
@@ -1212,14 +1223,14 @@ img {
           align-items: center;
   margin-right: auto;
   margin-left: auto;
-  width: 450px;
+  max-width: 450px;
 }
 @media screen and (min-width: 1200px) {
   .subscription {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    width: 570px;
+    max-width: 570px;
     margin-right: 0;
     margin-left: 0;
   }
@@ -1286,6 +1297,11 @@ img {
 }
 .subscription__input-mail:hover, .subscription__input-mail:focus {
   border-color: #2196f3;
+}
+@media screen and (max-width: 479px) {
+  .subscription__input-mail {
+    width: 300px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .subscription__input-mail {
