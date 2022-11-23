@@ -7,10 +7,11 @@
 
   margin-right: auto;
   margin-left: auto;
-  max-width: 450px;
+  width: 450px;
 
   @media screen and (min-width: 1200px) {
     align-items: flex-start;
+    width: 570px;
     margin-right: 0;
     margin-left: 0;
   }

@@ -174,11 +174,7 @@ img {
   margin-right: auto;
   padding-left: 28px;
   padding-right: 28px;
-}
-@media screen and (min-width: 1200px) {
-  .subscription__btn {
-    margin-left: 12px;
-  }
+  height: 50px;
 }
 
 .subscription__icon {
@@ -976,9 +972,6 @@ img {
   background-color: #2f303a;
 }
 
-.footer__container {
-  outline: 1px solid yellowgreen;
-}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__container {
     display: -webkit-box;
@@ -1153,13 +1146,14 @@ img {
           align-items: center;
   margin-right: auto;
   margin-left: auto;
-  max-width: 450px;
+  width: 450px;
 }
 @media screen and (min-width: 1200px) {
   .subscription {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    width: 570px;
     margin-right: 0;
     margin-left: 0;
   }
