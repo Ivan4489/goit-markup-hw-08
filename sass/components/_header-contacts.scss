@@ -19,6 +19,8 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 0;
 
     &__item {
       display: flex;

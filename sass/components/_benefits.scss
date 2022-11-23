@@ -1,5 +1,11 @@
 /* Переваги */
 
+.benefits.section {
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0;
+  }
+}
+
 .benefits__head {
   color: transparent;
   height: 0;
