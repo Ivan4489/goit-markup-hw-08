@@ -10,7 +10,7 @@
 .footer__container {
   outline: 1px solid yellowgreen;
 
-  @media screen and (min-width: 768px) and (max-width: 1599px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -20,7 +20,7 @@
     padding-left: 89px;
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
@@ -35,7 +35,7 @@
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and (min-width: 768px) and (max-width: 1599px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,7 +43,7 @@
     margin-right: 0;
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     margin: 0;
     align-items: flex-start;
   }
@@ -83,7 +83,7 @@
   transition-duration: 250ms;
   transition-timing-function: $animation;
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     margin: 0;
   }
 }
@@ -104,7 +104,7 @@
   align-items: center;
   margin-bottom: 60px;
 
-  @media screen and (min-width: 768px) and (max-width: 1599px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
     align-items: center;

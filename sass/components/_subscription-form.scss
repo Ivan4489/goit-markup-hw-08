@@ -9,7 +9,7 @@
   margin-left: auto;
   max-width: 450px;
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     align-items: flex-start;
     margin-right: 0;
     margin-left: 0;
@@ -31,7 +31,7 @@
 .subscription__form {
   width: 450px;
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     flex-direction: row;
   }
@@ -63,7 +63,7 @@
     border-color: $accent-clr;
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     width: 358px;
     margin-right: 12px;
   }

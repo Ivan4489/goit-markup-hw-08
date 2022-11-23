@@ -2,7 +2,7 @@
 .nav {
   display: none;
 
-  // @media screen and (min-width: 1600px) {
+  // @media screen and (min-width: 1200px) {
   //   display: flex;
   //   &__list {
   //     display: flex;
@@ -20,7 +20,7 @@
 .nav__link {
 
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -48,7 +48,7 @@
 .link--current {
   position: relative;
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     &::after {
       content: "";
 
