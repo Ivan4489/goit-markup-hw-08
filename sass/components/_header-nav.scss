@@ -2,24 +2,23 @@
 .nav {
   display: none;
 
-  // @media screen and (min-width: 1200px) {
-  //   display: flex;
-  //   &__list {
-  //     display: flex;
-  //     margin-left: 93px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
 
-  //     list-style-type: none;
-  //   }
+    &__list {
+      display: flex;
+      margin-left: 93px;
 
-  //   &__item + &__item {
-  //     margin-left: 50px;
-  //   }
-  // }
+      list-style-type: none;
+    }
+
+    &__item + &__item {
+      margin-left: 50px;
+    }
+  }
 }
 
 .nav__link {
-
-
   @media screen and (min-width: 1200px) {
     display: block;
     padding-top: 32px;
