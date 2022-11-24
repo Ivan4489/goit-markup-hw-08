@@ -16,10 +16,11 @@
   overflow-y: scroll;
 }
 
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
+// .backdrop.is-hidden {
+//   opacity: 0;
+//   visibility: hidden;
+//   pointer-events: none;
+// }
 
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(1.5);

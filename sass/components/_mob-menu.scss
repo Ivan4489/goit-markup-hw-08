@@ -10,7 +10,7 @@
   padding-bottom: 48px;
   padding-left: 40px;
 
-  background-color: antiquewhite;
+  background-color: $white-clr;
   overflow: auto;
 
   > .container {
@@ -22,11 +22,11 @@
   }
 }
 
-.mob-menu.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-}
+// .mob-menu.is-hidden {
+//   opacity: 0;
+//   visibility: hidden;
+//   pointer-events: none;
+// }
 
 .menu-close {
   position: absolute;

@@ -86,6 +86,12 @@ img {
           align-items: center;
 }
 
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -459,7 +465,7 @@ img {
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 40px;
-  background-color: antiquewhite;
+  background-color: #ffffff;
   overflow: auto;
 }
 .mob-menu > .container {
@@ -475,12 +481,6 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.mob-menu.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
 }
 
 .menu-close {
@@ -1326,11 +1326,6 @@ img {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   overflow-y: scroll;
-}
-
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
 }
 
 .backdrop.is-hidden .modal {
