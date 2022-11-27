@@ -60,14 +60,18 @@
 
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: calc(16/14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $headline-clr;
+
+  @media screen and (min-width: 768px) {
+    justify-content: flex-start;
+  }
 }
 
 .benefits__description {
   font-size: 14px;
-  line-height: 1.71;
+  line-height: calc(24/14);
   letter-spacing: 0.03em;
 }
